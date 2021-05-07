@@ -1,8 +1,8 @@
 package fr.yann.medecine.tests.test1;
 
-import java.time.LocalDate;
+import fr.yann.medecine.model.Patient;
 
-import fr.simplon.medecine.model.Patient;
+import java.time.LocalDate;
 
 public class TestPatient {
 
