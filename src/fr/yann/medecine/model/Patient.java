@@ -11,6 +11,7 @@ public class Patient {
 	private long securiteSociale;
 	private LocalDate dateDeNaissance;
 	private String commentaire;
+	private Adresse adresse;
 	
 	public Patient(String nom, String prenom, String numeroDeTelephone, char sexe, long securiteSociale,
 			LocalDate dateDeNaissance, String commentaire) {
@@ -22,6 +23,19 @@ public class Patient {
 		this.securiteSociale = securiteSociale;
 		this.dateDeNaissance = dateDeNaissance;
 		this.commentaire = commentaire;
+	}
+	
+	public Patient(String nom, String prenom, String numeroDeTelephone, char sexe, long securiteSociale,
+			LocalDate dateDeNaissance, String commentaire, Adresse adresse) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.numeroDeTelephone = numeroDeTelephone;
+		this.sexe = sexe;
+		this.securiteSociale = securiteSociale;
+		this.dateDeNaissance = dateDeNaissance;
+		this.commentaire = commentaire;
+		this.adresse = adresse;
 	}
 
 	public String getNom() {
@@ -87,5 +101,9 @@ public class Patient {
 		System.out.println("Numéro de sécurité sociale : " + securiteSociale);
 		System.out.println("Date de naissance : " + dateDeNaissance);
 		System.out.println("Commentaires : " + commentaire);
+		System.out.println("Adresse :");
+		adresse.afficher();
 	}
+	
+	
 }
